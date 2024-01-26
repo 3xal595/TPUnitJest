@@ -25,6 +25,7 @@ export class BookManager {
     findBookByTitle(title: string): Book | undefined {
         const foundBook = this.books.find((book) => book.title === title);
         if (!foundBook) {
+            
             throw new Error("Book not found in the collection");
         }
         return foundBook;
