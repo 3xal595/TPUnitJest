@@ -9,6 +9,7 @@ describe('BookManager', () => {
         bookManager = new BookManager();
     });
 
+
     test('adds a new book', () => {
         bookManager.addBook(mockBook);
         expect(bookManager.getAllBooks()).toContainEqual(mockBook);
